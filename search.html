@@ -53,21 +53,30 @@
             </div>
         </section>
         <script>
-window.onscroll = function() {myFunction()};
+            window.onscroll = function () { myFunction() };
 
-var topnav = document.getElementById("myTopnav");
-var sticky = topnav.offsetTop;
+            var topnav = document.getElementById("myTopnav");
+            var sticky = topnav.offsetTop;
 
-function myFunction() {
-if (window.pageYOffset >= sticky) {
-  topnav.classList.add("sticky")
-} else {
-  topnav.classList.remove("sticky");
-}
-}
+            function myFunction() {
+                if (window.pageYOffset >= sticky) {
+                    topnav.classList.add("sticky")
+                } else {
+                    topnav.classList.remove("sticky");
+                }
+            }
         </script>
 
-
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav";
+                }
+            }
+        </script>
     </body>
 
 </html>
